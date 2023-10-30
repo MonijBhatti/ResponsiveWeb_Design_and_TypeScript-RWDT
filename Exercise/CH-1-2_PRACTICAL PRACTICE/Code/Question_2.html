@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 75%;
+            padding: 15px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #004fa3;
+            outline: none;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        img{
+                height: 25px;
+            }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #034b9e;
+        }
+
+        @media (max-width: 500px) {
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea,
+            select {
+                width: 75%;
+            }
+
+            img{
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Simple Form Example</h2>
+    <hr/>
+    <form action="">
+        <fieldset>
+            <table align="center">
+                <tr>
+                    <td> 
+                        <label for="Name">Name</label>
+                        <img src="icon/user.png"></img>
+                    </td>
+                    <td><input type="text" name="Name" id="Name"></td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="Name">Email</label>
+                        <img src="icon/mail.png"></img>
+                    </td>
+                    <td> <input type="email" name="Email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="Phone">Phone</label>
+                        <img src="icon/phone.png"></img>
+                    </td>
+                    <td> <input type="tel" name="Phone" id="Phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="Select">Select</label></td>
+                    <td> 
+                        <select name="Select" id="Select">
+                            <option value="Option-1">Option-1</option>
+                            <option value="Option-2">Option-2</option>
+                            <option value="Option-3">Option-3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Message">Message</label></td>
+                    <td> 
+                        <textarea name="Message" id="Message" cols="30" rows="10">Message</textarea>
+                    </td>
+                </tr> 
+                <tr>
+                    <td> 
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr> 
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
